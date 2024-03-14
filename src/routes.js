@@ -1,8 +1,8 @@
 import React from "react";
 import {Route, BrowserRouter, Switch} from "react-router-dom";
 
-import HomePage from "./pages/HomePage";
-import ListaContatos from "./pages/ListaContatos";
+import HomePage from "./pages/HomePage/home";
+import ListaContatos from "./pages/ListaContatos/listaContacts";
 
 const Routes = () => (
         <BrowserRouter>

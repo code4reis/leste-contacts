@@ -1,0 +1,30 @@
+/* Estiliza a div principal da home page */
+.main {
+    background-color: #EBEBEB;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* Estiliza o logotipo */
+.logoHome {
+    max-width: 300px;
+    max-height: 200px;
+    margin-bottom: 20px;
+}
+/* Estiliza a div que contém o botão */
+.back {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/* Estiliza o botão */
+.toList {
+    background-color: #12A146;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

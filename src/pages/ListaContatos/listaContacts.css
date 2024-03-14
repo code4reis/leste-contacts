@@ -1,0 +1,197 @@
+/* Estilo para o contêiner principal */
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EBEBEB;
+    box-sizing: border-box;
+    z-index: 9998;
+}
+/* Removendo a estilização padrão das listas */
+li {
+    list-style: none;
+}
+/* Estilo para a lista de contatos */
+.listContact {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 33.85%;
+    box-shadow: 0px 0px 4px 1px;
+    border-radius: 10px;
+    overflow-y: auto;
+    max-height: 90vh;
+    position: fixed;
+}
+/* Estilo para cada item de contato */
+.contact {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+/* Estilo para a imagem de cada contato */
+.imageDetail {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 52px;
+    height: 52px;
+}
+/* Estilo para o organizador da lista de contatos */
+.orgList {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+/* Estilo para o botão de detalhes do contato */
+.btnDetail {
+    margin-top: 10px;
+    height: 30px;
+    display: flex !important;
+    align-items: center !important;
+}
+/* Estilo para a div que reune o logo e as funções de busca e adição de usuário */
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+/* Estilo para o logotipo */
+.logo {
+    width: 150px;
+    pointer-events: none;
+}
+/* Estilo para os icones das funções */
+.headerFunctions {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+/* Estilo para o icone de adicionar contato */
+.addContact {
+    width: 40px;
+    cursor: pointer;
+}
+/* Estilo para o icone do filtro de busca
+.searchFilter {
+    width: 30px;
+    cursor: pointer;
+}
+/* Estilo para o painel de filtro */
+.filter {
+    display: none;
+    flex-wrap: nowrap;
+    user-select: none;
+    gap: 10px;
+}
+/* Estilo para o icone de fechar o painel de filtro */
+.closeFilter {
+    cursor: pointer;
+    margin-left: 15px;
+}
+/* Estilo para o painel de detalhes do contato */
+.showContactDetail {
+    position: absolute !important;
+    width: 31.25%;
+    top: 30%;
+    display: flex;
+    gap: 30px;
+    display: none;
+}
+/* Estilo para as informações do contato */
+.info {
+    width: 100%;
+}
+/* Estilo para a imagem do contato nos detalhes */
+.img {
+    width: 80%;
+}
+/* Estilo para o avatar do contato */
+.avatar {
+    width: 100%;
+    height: 82%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+/* Estilo para a barra de rolagem na lista de contatos */
+.listContact::-webkit-scrollbar {
+    background-color: #EBEBEB;
+    border-radius: 10px;
+    width: 10px;
+}
+/* Estilo para o polegar da barra de rolagem */
+.listContact::-webkit-scrollbar-thumb {
+    background-color: #198754;
+    /* Cor da alça (thumb) */
+    border-radius: 10px;
+    /* Raio da borda da alça */
+}
+/* Estilo para o icone de fechar */
+.close {
+    position: absolute;
+    right: 0;
+    margin-right: 15px;
+    cursor: pointer;
+}
+/* Estilos para ocultar detalhes especificos do contato na lista */
+.ageDetail,
+.languageDetail,
+.genderDetail {
+    display: none;
+}
+/* Estilo para o seletor de gênero */
+#selectGender {
+    display: none;
+}
+/* Estilo para os botões de ação do usuário */
+.orgUserBtns {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    left: 80%;
+    width: fit-content;
+}
+/* Estilo para o ícone de exclusão do usuário */
+.delete {
+    cursor: pointer;
+    width: 25px;
+}
+/* Estilo para o icone de edição do usuário */
+.edit {
+    width: 25px;
+    cursor: pointer;
+}
+/* Estilos para o formulário de edição do usuário */
+.formEditUser {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+/* Estilos para os botões de ação de edição do usuário */
+.orgEditBtns {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+/* Estilo para o painel de índice de usuários por gênero e idioma */
+.listGender {
+    position: fixed;
+    display: none;
+    width: fit-content;
+    left: 0;
+    margin-left: 15px;
+}
+/* Estilo para o icone de lista de índice */
+.staticList {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    padding: 20px;
+    cursor: pointer;
+}
+/* Estilo para rotacionar o icone da lista de índice */
+.rotated {
+    transform: rotate(90deg);
+}
