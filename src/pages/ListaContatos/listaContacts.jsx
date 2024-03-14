@@ -57,7 +57,7 @@ function App() {
 
     fetchData();
     CountUsers();
-  }, [users]);
+  }, []);
 
 // Armazena os filtros selecionados com a aplicação aberta
   useEffect(() => {
