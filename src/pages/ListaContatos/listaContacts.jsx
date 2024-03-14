@@ -70,7 +70,7 @@ function App() {
       searchBirthday
     };
     localStorage.setItem('filterSettings', JSON.stringify(filterSettings));
-  }, [filterByMonth, filterByGender, filterByName, filterByLanguage, filterByAge, searchBirthday]);
+  }, [filterByMonth, filterByGender, filterByName, filterByLanguage, filterByAge, searchBirthday, users]);
 
 // Exibe os detalhes do usuaŕio
   const showDetails = user => {
