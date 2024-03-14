@@ -70,7 +70,26 @@ function App() {
       searchBirthday
     };
     localStorage.setItem('filterSettings', JSON.stringify(filterSettings));
-  }, [filterByMonth, filterByGender, filterByName, filterByLanguage, filterByAge, searchBirthday, users]);
+  }, [filterByMonth, filterByGender, filterByName, filterByLanguage, filterByAge, searchBirthday]);
+
+  // Atualiza contagens de usuários por gênero e idioma sempre que a lista de usuários é atualizada
+  useEffect(() => {
+    countUsersByGenderAndLanguage();
+  }, [users]);
+
+  // Função para contar usuários por gênero e idioma
+  const countUsersByGenderAndLanguage = () => {
+    let genderCount = {};
+    let languageCount = {};
+
+    users.forEach(user => {
+      genderCount[user.gender] = (genderCount[user.gender] || 0) + 1;
+      languageCount[user.language] = (languageCount[user.language] || 0) + 1;
+    });
+
+    setUserCountByGender(genderCount);
+    setUserCountByLanguage(languageCount);
+  };
 
 // Exibe os detalhes do usuaŕio
   const showDetails = user => {
