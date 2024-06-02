@@ -31,10 +31,12 @@ li {
         overflow-x: hidden;
     }
     .showContactDetail {
-        width: 100%;
+        width: 100% !imporant;
         height: fit-content;
     }
-}
+    .filter {
+        width: 100% !imporant;
+    }
 /* Estilo para cada item de contato */
 .contact {
     display: flex;
