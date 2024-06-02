@@ -28,8 +28,11 @@ li {
 @media screen and (max-width: 500px) {
     .listContact {
         width: 100%;
-        overflow-y: hidden;
         overflow-x: hidden;
+    }
+    .showContactDetail {
+        width: 100%;
+        height: fit-content;
     }
 }
 /* Estilo para cada item de contato */
