@@ -37,6 +37,7 @@ li {
     .filter {
         width: 100% !imporant;
     }
+}
 /* Estilo para cada item de contato */
 .contact {
     display: flex;
