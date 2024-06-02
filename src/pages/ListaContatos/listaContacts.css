@@ -24,11 +24,12 @@ li {
     overflow-y: auto;
     max-height: 90vh;
     position: fixed;
-
-    @media screen and (max-width: 500px) {
-        body {
-            width: 100%;
-        }
+}
+@media screen and (max-width: 500px) {
+    .listaContact {
+        width: 100%;
+        overflow-y: hidden;
+        overflow-x: hidden;
     }
 }
 /* Estilo para cada item de contato */
