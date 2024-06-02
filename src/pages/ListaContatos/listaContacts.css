@@ -24,6 +24,12 @@ li {
     overflow-y: auto;
     max-height: 90vh;
     position: fixed;
+
+    @media screen and (max-width: 500px) {
+        body {
+            width: 100%;
+        }
+    }
 }
 /* Estilo para cada item de contato */
 .contact {
